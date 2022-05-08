@@ -1,5 +1,3 @@
 @import 'partials/settings';
-
-body {
-    color: yellow;
-}
+@import 'partials/global';
+@import 'partials/navbar';
