@@ -1,9 +1,14 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
-    padding: 15px 60px;
+    padding: 12px 60px;
     font-size: 25px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -16,10 +21,17 @@
     &__element {
         list-style-type: none;
         padding: 0;
+        cursor: pointer;
     }
 
     &__option {
         display: none;
+
+        a:hover {
+            color: $color-second;
+            transform: scale(1.05);
+            will-change: transform;
+        }
 
         &--menu {
             display: flex;
@@ -27,6 +39,11 @@
 
         &--logo {
             font-family: $font-logo;
+
+            &:hover {
+                transform: scale(1.05);
+                will-change: transform;
+            }
 
             span {
                 color: $color-second;
@@ -49,6 +66,7 @@
         &__option {
             display: flex;
             padding-left: 30px;
+            font-size: 23px;
 
             &--menu {
                 display: none;
