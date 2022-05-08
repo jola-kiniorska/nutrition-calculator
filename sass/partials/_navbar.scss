@@ -45,14 +45,14 @@
             flex-direction: row;
             justify-content: space-between;
         }
-    }
 
-    .navbar__option {
-        display: flex;
-        padding-left: 30px;
-    }
+        &__option {
+            display: flex;
+            padding-left: 30px;
 
-    .navbar__option--menu {
-        display: none;
+            &--menu {
+                display: none;
+            }
+        }
     }
 }
