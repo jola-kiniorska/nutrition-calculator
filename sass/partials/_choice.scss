@@ -1,0 +1,19 @@
+.choice {
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__text {
+        padding-top: 15px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: $font-regular;
+    }
+
+    &__button {
+        margin: 10px;
+        text-align: center;
+    }
+}

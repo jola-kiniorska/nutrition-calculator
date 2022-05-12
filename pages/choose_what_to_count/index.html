@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Nutrition Calculator</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +18,36 @@
 </head>
 
 <body>
-<h1>Page 2</h1>
+    <div id="navWrapper">
+        <nav class="navbar__container">
+            <ul class="navbar">
+                <ul class="navbar__element">
+                    <li class="navbar__option--logo"><a href="../../index.html"><span>Nutrition</span>Calculator</a>
+                    </li>
+                </ul>
+                <ul class="navbar__element navbar__options">
+                    <li class="navbar__option navbar__option--menu"><a href=#menu>Menu</a></li>
+                    <li class="navbar__option"><a href="../bmi/index.html">BMI</a></li>
+                    <li class="navbar__option"><a href="../whr/index.html">WHR</a></li>
+                    <li class="navbar__option"><a href="../calories/index.html">Calories</a></li>
+                    <li class="navbar__option navbar__option--description"><a href=#description>Description</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="contentWrapper">
+        <div class="container">
+            <h4 class="choice__text">What would you like to calculate?</h4>
+            <div class="choice__buttons">
+                <a class="button choice__button" href="../bmi/index.html">BMI</a>
+                <a class="button choice__button" href="../whr/index.html">WHR</a>
+                <a class="button choice__button" href="../calories/index.html">Calories</a>
+            </div>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
