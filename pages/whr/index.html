@@ -23,7 +23,8 @@
         <nav class="navbar__container">
             <ul class="navbar">
                 <ul class="navbar__element">
-                    <li class="navbar__option--logo"><a href="../../index.html"><span>Nutrition</span>Calculator</a></li>
+                    <li class="navbar__option--logo"><a href="../../index.html"><span>Nutrition</span>Calculator</a>
+                    </li>
                 </ul>
                 <ul class="navbar__element navbar__options">
                     <li class="navbar__option navbar__option--menu"><a href=#menu>Menu</a></li>
@@ -34,6 +35,20 @@
                 </ul>
             </ul>
         </nav>
+    </div>
+
+    <div id="calculation" class="calculate">
+        <h1 class="calculate__title">Calculator WHR</h1>
+        <p class="calculate__subtitle">Please enter your details</p>
+        <form class="calculate__form calculate__form--whr">
+            <button type="button" class="calculate__gender"><i class="fas fa-female"></i></button>
+            <button type="button" href=#man class="calculate__gender"><i class="fas fa-male"></i></button>
+            <label for="waist" class="calculate__label calculate__label--whr">Waist circumference:</label>
+            <input type="text" id="waist" placeholder="60 cm" class="calculate__input calculate__input--whr"><br>
+            <label for="hip" class="calculate__label calculate__label--whr">Hip circumference:</label>
+            <input type="text" id="hip" placeholder="90 cm" class="calculate__input calculate__input--whr">
+        </form>
+        <a class="button calculate__button" href="#calculate">Calculate</a>
     </div>
 
 </body>
