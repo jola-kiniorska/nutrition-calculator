@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Nunito&display=swap" rel="stylesheet">
 
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -34,6 +36,24 @@
                 </ul>
             </ul>
         </nav>
+    </div>
+
+    <div id="calculation" class="calculate">
+        <h1 class="calculate__title">Calories Calculator</h1>
+        <p class="calculate__subtitle">Please enter your details</p>
+        <form class="calculate__form">
+            <button type="button" class="calculate__gender"><i class="fas fa-female"></i></button>
+            <button type="button" class="calculate__gender"><i class="fas fa-male"></i></button>
+            <label for="weight" class="calculate__label">Body weight:</label>
+            <input type="text" id="weight" placeholder="56 kg" class="calculate__input"><br>
+            <label for="height" class="calculate__label">Height</label>
+            <input type="text" id="height" placeholder="170 cm" class="calculate__input">
+            <label for="age" class="calculate__label">Age:</label>
+            <input type="text" id="age" placeholder="32" class="calculate__input">
+            <label for="activity" class="calculate__label">Phisical activity:</label>
+            <input type="text" id="activity" placeholder="active lifestyle" class="calculate__input">
+        </form>
+        <a class="button calculate__button" href="#calculate">Calculate</a>
     </div>
 
 </body>
