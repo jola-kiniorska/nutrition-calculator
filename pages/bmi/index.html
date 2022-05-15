@@ -23,7 +23,8 @@
         <nav class="navbar__container">
             <ul class="navbar">
                 <ul class="navbar__element">
-                    <li class="navbar__option--logo"><a href="../../index.html"><span>Nutrition</span>Calculator</a></li>
+                    <li class="navbar__option--logo"><a href="../../index.html"><span>Nutrition</span>Calculator</a>
+                    </li>
                 </ul>
                 <ul class="navbar__element navbar__options">
                     <li class="navbar__option navbar__option--menu"><a href=#menu>Menu</a></li>
@@ -36,8 +37,16 @@
         </nav>
     </div>
 
-    <div>
-        <h1>Calculator BMI</h1>
+    <div id="calculation" class="calculate">
+        <h1 class="calculate__title">Calculator BMI</h1>
+        <p class="calculate__subtitle">Please enter your details</p>
+        <form class="calculate__form">
+                <label for="weight" class="calculate__label">Body weight:</label>
+                <input type="text" id="weight" placeholder="65 kg" class="calculate__input"><br>
+                <label for="height" class="calculate__label">Height:</label>
+                <input type="text" id="height" placeholder="170 cm" class="calculate__input">
+        </form>
+        <a class="button calculate__button" href="#calculate">Calculate</a>
     </div>
 </body>
 
