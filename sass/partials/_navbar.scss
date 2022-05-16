@@ -35,6 +35,11 @@ a {
 
         &--menu {
             display: flex;
+            background-color: $color-first;
+            border: none;
+            color: #fff;
+            font-family: $font-main;
+            font-size: 23px;
         }
 
         &--logo {
@@ -48,6 +53,38 @@ a {
             span {
                 color: $color-second;
             }
+        }
+    }
+
+    .dropdown {
+        display: inline-block;
+        position: relative;
+
+        &__content {
+            display: none;
+            position: absolute;
+            width: 186%;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            background-color: $color-first;
+            border-radius: 7px;
+
+            &--link {
+                display: block;
+                color: #fff;
+                padding: 10px;
+                text-decoration: none;
+                font-size: 20px;
+
+                &:hover {
+                    color: #fff;
+                    background-color: $color-second;
+                }
+            }
+        }
+
+        &:hover .dropdown__content {
+            display: block;
         }
     }
 }
