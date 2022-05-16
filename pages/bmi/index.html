@@ -26,8 +26,17 @@
                     </li>
                 </ul>
                 <ul class="navbar__element navbar__options">
-                    <li class="navbar__option navbar__option--menu"><a href=#menu>Menu</a></li>
-                    <li class="navbar__option"><a href=#bmi>BMI</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="navbar__option--menu">Menu</button>
+                            <div class="dropdown__content">
+                                <a class="dropdown__content--link" href="#bmi">BMI</a>
+                                <a class="dropdown__content--link" href="../whr/index.html">WHR</a>
+                                <a class="dropdown__content--link" href="../calories/index.html">Calories</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navbar__option"><a href="#bmi">BMI</a></li>
                     <li class="navbar__option"><a href="../whr/index.html">WHR</a></li>
                     <li class="navbar__option"><a href="../calories/index.html">Calories</a></li>
                     <li class="navbar__option navbar__option--description"><a href=#description>Description</a></li>
