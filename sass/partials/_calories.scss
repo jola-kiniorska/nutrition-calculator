@@ -1,0 +1,36 @@
+.calories {
+    margin-bottom: 50px;
+
+    &__gender {
+        margin: 5px 20px;
+    }
+
+    &__input {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    .calories {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 50px [row-start]);
+        row-gap: 10px;
+        grid-auto-flow: row;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .item-a {
+        grid-column: 1;
+        grid-row: 2, 3, 4, 5;
+    }
+
+    .item-b {
+        grid-column: 2;
+        grid-row: 2, 3, 4, 5;
+    }
+}
+
+@media only screen and (min-width: 1141px) {
+}

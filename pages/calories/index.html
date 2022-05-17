@@ -49,22 +49,21 @@
 
     <div id="calculation" class="calculate">
         <h1 class="calculate__title">Calories calculator</h1>
-        <p class="calculate__subtitle">Please enter your details</p>
-        <form class="calculate__form calculate__form--calories">
-            <button type="button" class="calculate__gender calculate__gender--female"><i
+        <form class="calories">
+            <button type="button" class="calculate__gender calories__gender"><i
                     class="fas fa-female"></i></button>
-            <button type="button" class="calculate__gender calculate__gender--male"><i class="fas fa-male"></i></button>
-            <label for="weight" class="calculate__label">Body weight:</label>
-            <input type="text" id="weight" placeholder="56 kg" class="calculate__input"><br>
-            <label for="height" class="calculate__label">Height</label>
-            <input type="text" id="height" placeholder="170 cm" class="calculate__input">
-            <label for="age" class="calculate__label calculate__label--calories">Age:</label>
-            <input type="text" id="age" placeholder="32" class="calculate__input calculate__input--calories">
-            <label for="activity" class="calculate__label calculate__label--calories">Phisical activity:</label>
+            <button type="button" class="calculate__gender calories__gender"><i class="fas fa-male"></i></button>
+            <label for="weight" class="calculate__label calories__label item-a">Body weight:</label>
+            <input type="text" id="weight" placeholder="56 kg" class="calculate__input calories__input item-a"><br>
+            <label for="height" class="calculate__label calories__label item-a">Height</label>
+            <input type="text" id="height" placeholder="170 cm" class="calculate__input calories__input item-a">
+            <label for="age" class="calculate__label calories__label item-b">Age:</label>
+            <input type="text" id="age" placeholder="32" class="calculate__input calories__input item-b">
+            <label for="activity" class="calculate__label calories__label item-b">Phisical activity:</label>
             <input type="text" id="activity" placeholder="active lifestyle"
-                class="calculate__input calculate__input--calories">
+                class="calculate__input calories__input item-b">
         </form>
-        <a class="button calculate__button" href="#calculate">Calculate</a>
+        <a class="button calories__button" href="#calculate">Calculate</a>
     </div>
 
 </body>
