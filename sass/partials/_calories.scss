@@ -13,23 +13,35 @@
 @media only screen and (min-width: 641px) {
     .calories {
         display: grid;
+        padding: 0 100px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5, 50px [row-start]);
-        row-gap: 10px;
-        grid-auto-flow: row;
+        row-gap: 15px;
+        grid-auto-flow: row dense;
         justify-items: center;
         align-items: center;
+
+        &__input {
+            width: 60%;
+            justify-self: start;
+        }
+
+        &__label {
+            justify-self: end;
+            padding-right: 40px;
+        }
     }
 
-    .item-a {
-        grid-column: 1;
-        grid-row: 2, 3, 4, 5;
+    .female {
+        justify-self: end;
     }
 
-    .item-b {
-        grid-column: 2;
-        grid-row: 2, 3, 4, 5;
+    .male {
+        justify-self: start;
     }
+
+
+
+
 }
 
 @media only screen and (min-width: 1141px) {
