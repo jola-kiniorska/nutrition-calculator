@@ -1,10 +1,6 @@
 .calories {
     margin-bottom: 50px;
 
-    &__gender {
-        margin: 5px 20px;
-    }
-
     &__input {
         margin: 0;
     }
@@ -29,20 +25,45 @@
             justify-self: end;
             padding-right: 40px;
         }
+
+        &__gender {
+            &--female {
+                justify-self: end;
+                margin-bottom: 5px;
+            }
+
+            &--male {
+                justify-self: start;
+                margin-bottom: 5px;
+            }
+        }
     }
-
-    .female {
-        justify-self: end;
-    }
-
-    .male {
-        justify-self: start;
-    }
-
-
-
-
 }
 
 @media only screen and (min-width: 1141px) {
+    .calories {
+        padding: 0 350px 30px;
+        row-gap: 7px;
+
+        &__input {
+            width: 60%;
+        }
+
+        &__label {
+            font-size: 17px;
+        }
+
+    }
+
+    .item-a {
+        grid-column: 1;
+        justify-self: center;
+        margin-left: 50px;
+    }
+
+    .item-b {
+        grid-column: 2;
+        justify-self: center;
+        margin-right: 50px;
+    }
 }
