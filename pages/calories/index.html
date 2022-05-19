@@ -53,15 +53,21 @@
             <button type="button" class="calculate__gender calories__gender--female"><i
                     class="fas fa-female"></i></button>
             <button type="button" class="calculate__gender calories__gender--male"><i class="fas fa-male"></i></button>
-            <label for="weight" class="calculate__label calories__label item-a">Body weight:</label>
+            <label for="weight" class="calculate__label calories__label item-a">Body weight (kg):</label>
             <input type="text" id="weight" placeholder="56 kg" class="calculate__input calories__input item-a">
-            <label for="height" class="calculate__label calories__label item-a">Height:</label>
+            <label for="height" class="calculate__label calories__label item-a">Height (cm):</label>
             <input type="text" id="height" placeholder="170 cm" class="calculate__input calories__input item-a">
             <label for="age" class="calculate__label calories__label item-b">Age:</label>
             <input type="text" id="age" placeholder="32" class="calculate__input calories__input item-b">
             <label for="activity" class="calculate__label calories__label item-b">Phisical activity:</label>
-            <input type="text" id="activity" placeholder="active lifestyle"
-                class="calculate__input calories__input item-b">
+            <select id="activity" class="calculate__input calories__input item-b">
+                <option value="lying in bed" class="calories__input--select">lying in bed</option>
+                <option value="low activity" class="calories__input--select">low activity</option>
+                <option value="moderate activity" class="calories__input--select">moderate activity</option>
+                <option value="active lifestyle" class="calories__input--select">active lifestyle</option>
+                <option value="very active lifestyle" class="calories__input--select">very active lifestyle</option>
+                <option value="extreme sport" class="calories__input--select">extreme sport</option>
+            </select>
         </form>
         <a class="button calories__button" href="#calculate">Calculate</a>
     </div>

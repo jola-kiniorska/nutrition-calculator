@@ -13,8 +13,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 </head>
 
 <body>
@@ -48,13 +46,16 @@
     <div id="calculation" class="calculate">
         <h1 class="calculate__title">BMI calculator</h1>
         <form class="calculate__form">
-                <label for="weight" class="calculate__label">Body weight:</label>
-                <input type="text" id="weight" placeholder="65 kg" class="calculate__input"><br>
-                <label for="height" class="calculate__label">Height:</label>
-                <input type="text" id="height" placeholder="170 cm" class="calculate__input">
+                <label for="weight" class="calculate__label">Body weight (kg):</label>
+                <input type="text" id="weight" placeholder="65 kg" class="calculate__input">
+                <label for="height" class="calculate__label">Height (m):</label>
+                <input type="text" id="height" placeholder="1.70 m" class="calculate__input">
         </form>
-        <a class="button calculate__button" href="#calculate">Calculate</a>
+        <a id="button" class="button calculate__button" href="#calculate">Calculate</a>
     </div>
+
+    <script src="../../js/bmi.js"></script>
+
 </body>
 
 </html>

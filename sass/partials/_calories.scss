@@ -3,6 +3,10 @@
 
     &__input {
         margin: 0;
+
+        &--select {
+            padding-top: 50px;
+        }
     }
 }
 
@@ -52,7 +56,6 @@
         &__label {
             font-size: 17px;
         }
-
     }
 
     .item-a {

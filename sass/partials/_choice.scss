@@ -2,7 +2,6 @@
     &__buttons {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
     }
 
     &__text {
@@ -15,5 +14,7 @@
     &__button {
         margin: 10px;
         text-align: center;
+        width: 50%;
+        align-self: center;
     }
 }
