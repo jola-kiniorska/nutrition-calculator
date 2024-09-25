@@ -205,6 +205,17 @@ a {
   padding: 7px;
   font-size: 18px;
 }
+label[for="male"] {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: start;
+  padding-left: 25px;
+}
+label[for="female"] {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: end;
+}
 .calculate__input {
   justify-content: center;
   margin: 10px;
@@ -229,26 +240,25 @@ a {
 }
 .calculate__gender {
   margin: 5px 20px 20px 20px;
-  background-color: #84936a;
-  opacity: 70%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #fff;
-  font-size: 25px;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  border: none;
   cursor: pointer;
+  grid-column: 2;
 }
 .calculate__gender:hover {
   opacity: 100%;
 }
-.calculate__gender:focus {
-  opacity: 100%;
-  border: 2px solid #fff;
-}
-.calculate__gender--female {
+.calories__gender--female {
+  grid-row: 2;
+  grid-column: 1;
   justify-self: end;
+}
+.calories__gender--male {
+  grid-row: 2;
+  grid-column: 2;
+  justify-self: start;
 }
 
 @media only screen and (min-width: 641px) {
@@ -269,8 +279,7 @@ a {
   }
   .calculate__label {
     grid-column: 1;
-    justify-self: end;
-    padding-right: 50px;
+    justify-self: center;
     font-size: 20px;
   }
   .calculate__input {
@@ -305,14 +314,6 @@ a {
   .calories__label {
     justify-self: end;
     padding-right: 40px;
-  }
-  .calories__gender--female {
-    justify-self: end;
-    margin-bottom: 5px;
-  }
-  .calories__gender--male {
-    justify-self: start;
-    margin-bottom: 5px;
   }
 }
 @media only screen and (min-width: 1141px) {
