@@ -45,16 +45,17 @@
 
     <div id="calculation" class="wrapper calculate">
         <h1 class="main__title">BMI calculator</h1>
-        <form class="calculate__form">
+        <form class="calculate__form" action="../bmi_result/index.html">
                 <label for="weight" class="calculate__label">Body weight (kg):</label>
-                <input type="text" id="weight" placeholder="65" class="calculate__input">
+                <input type="text" id="weight" placeholder="65" class="calculate__input" required>
                 <label for="height" class="calculate__label">Height (cm):</label>
-                <input type="text" id="height" placeholder="170" class="calculate__input">
+                <input type="text" id="height" placeholder="170" class="calculate__input" required>
+                <input type="submit" value="Calculate" id="button__bmi" class="button calculate__button">
         </form>
-        <a id="button__bmi" class="button calculate__button" href="../bmi_result/index.html">Calculate</a>
     </div>
 
     <script src="../../js/bmi.js"></script>
+    <script src="../../js/main.js"></script>
 
 </body>
 

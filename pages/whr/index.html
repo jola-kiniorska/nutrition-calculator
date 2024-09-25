@@ -49,13 +49,13 @@
 
     <div id="calculation" class="wrapper calculate">
         <h1 class="main__title">WHR calculator</h1>
-        <form class="calculate__form">
+        <form class="calculate__form" action="../whr_result/index.html">
             <label for="waist" class="calculate__label">Waist circumference (cm):</label>
-            <input type="text" id="waist" placeholder="60" class="calculate__input"><br>
+            <input type="text" id="waist" placeholder="60" class="calculate__input" required>
             <label for="hip" class="calculate__label">Hip circumference (cm):</label>
-            <input type="text" id="hip" placeholder="90" class="calculate__input">
+            <input type="text" id="hip" placeholder="90" class="calculate__input" required>
+            <input type="submit" value="Calculate" id="button__whr" class="button calculate__button">
         </form>
-        <a id="button__whr" class="button calculate__button" href="../whr_result/index.html">Calculate</a>
     </div>
 
     <script src="../../js/whr.js"></script>

@@ -49,27 +49,27 @@
 
     <div id="calculation" class="wrapper calculate">
         <h1 class="main__title">Calories calculator</h1>
-        <form class="calories">
+        <form class="calories" action="../calories_result/index.html">
             <label for="female" class="calculate__label">Female</label>
-            <input type="radio" class="calculate__gender calories__gender--female" id="female" name="gender" value="female">
+            <input type="radio" class="calculate__gender calories__gender--female" id="female" name="gender" value="female" required>
             <label for="male" class="calculate__label">Male</label>
-            <input type="radio" class="calculate__gender calories__gender--male" id="male" name="gender" value="male">
+            <input type="radio" class="calculate__gender calories__gender--male" id="male" name="gender" value="male" required>
             <label for="weight" class="calculate__label calories__label item-a">Body weight (kg):</label>
-            <input type="text" id="weight" placeholder="56" class="calculate__input calories__input item-a">
+            <input type="text" id="weight" placeholder="56" class="calculate__input calories__input item-a" required>
             <label for="height" class="calculate__label calories__label item-a">Height (cm):</label>
-            <input type="text" id="height" placeholder="170" class="calculate__input calories__input item-a">
+            <input type="text" id="height" placeholder="170" class="calculate__input calories__input item-a" required>
             <label for="age" class="calculate__label calories__label item-b">Age:</label>
-            <input type="text" id="age" placeholder="32" class="calculate__input calories__input item-b">
+            <input type="text" id="age" placeholder="32" class="calculate__input calories__input item-b" required>
             <label for="activity" class="calculate__label calories__label item-b">Phisical activity:</label>
-            <select id="activity" class="calculate__input calories__input item-b">
+            <select id="activity" class="calculate__input calories__input item-b" required>
                 <option value="1.2" class="calories__input--select">lying in bed</option>
                 <option value="1.4" class="calories__input--select">low activity</option>
                 <option value="1.6" class="calories__input--select">moderate activity</option>
                 <option value="1.8" class="calories__input--select">active lifestyle</option>
                 <option value="2.0" class="calories__input--select">very active lifestyle</option>
             </select>
+            <input type="submit" value="Calculate" id="button__calories" class="button calculate__button">
         </form>
-        <a id="button__calories" class="button calories__button" href="../calories_result/index.html">Calculate</a>
     </div>
 
     <script src="../../js/calories.js"></script>

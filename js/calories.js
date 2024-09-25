@@ -4,7 +4,7 @@ function countCalories() {
     const age = document.getElementById("age");
     const activity = document.getElementById("activity");
     const buttonCalories = document.getElementById("button__calories");
-    
+
     buttonCalories.addEventListener('click', function () {
         const gender = document.querySelector('input[name="gender"]:checked').value;
         const weightParam = parseFloat(weight.value);
