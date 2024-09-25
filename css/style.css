@@ -185,12 +185,12 @@ a {
   align-self: center;
 }
 
-.calculate {
+.wrapper {
   margin: 80px auto;
   text-align: center;
   font-family: "Nunito", sans-serif;
 }
-.calculate__title {
+.main__title {
   font-size: 28px;
   font-weight: 700;
 }
@@ -267,7 +267,7 @@ label[for="female"] {
   }
 }
 @media only screen and (min-width: 1141px) {
-  .calculate__title {
+  .main__title {
     font-size: 34px;
   }
   .calculate__form {
