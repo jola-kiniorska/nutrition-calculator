@@ -176,7 +176,9 @@ a {
 #button__calories {
   width: 35%;
 }
-
+.intro__button {
+  display: inline;
+}
 .choice__buttons {
   display: flex;
   flex-direction: column;
@@ -298,7 +300,7 @@ label[for="female"] {
     width: 25%;
   }
 }
-.calories {
+.calories__form {
   margin-bottom: 50px;
 }
 .calories__input {
@@ -309,7 +311,7 @@ label[for="female"] {
 }
 
 @media only screen and (min-width: 641px) {
-  .calories {
+  .calories__form {
     display: grid;
     padding: 0 100px;
     grid-template-columns: 1fr 1fr;
@@ -328,7 +330,7 @@ label[for="female"] {
   }
 }
 @media only screen and (min-width: 1141px) {
-  .calories {
+  .calories__form {
     padding: 0 350px 30px;
     row-gap: 7px;
   }
