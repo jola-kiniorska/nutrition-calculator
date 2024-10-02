@@ -42,12 +42,12 @@ const whrResult = document.querySelector('.whr_result');
 const caloriesResult = document.querySelector('.calories_result');
 
 if (bmiResult) {
-    const bmiMeaning = document.querySelector('.bmi_meaning');
+    const bmiMeaning = document.querySelector('.bmi_meaning span');
     const bmiValue = localStorage.getItem('bmi_value');
     if (bmiValue < 18.5) {
         bmiMeaning.textContent = "underweight";
     } else if (bmiValue >= 18.5 && bmiValue <= 24.99) {
-        bmiMeaning.textContent = "correct weight";
+        bmiMeaning.textContent = "correct :)";
     } else if (bmiValue >= 25.0) {
         bmiMeaning.textContent = "overweight";
     }
