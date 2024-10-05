@@ -16,5 +16,22 @@
         text-align: center;
         width: 50%;
         align-self: center;
+        padding: 10px 35px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .choice {  
+        &__button {
+            width: 30%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .choice {  
+        &__button {
+            width: 40%;
+        }
     }
 }

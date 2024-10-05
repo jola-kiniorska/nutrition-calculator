@@ -1,14 +1,9 @@
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
-    padding: 12px 60px;
+    padding: 12px 15px;
     font-size: 25px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -70,7 +65,7 @@ a {
             position: absolute;
             width: 186%;
             overflow: auto;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             background-color: $color-first;
             border-radius: 7px;
 
@@ -94,11 +89,16 @@ a {
     }
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 768px) {
+    .navbar {
+        padding: 12px 25px;
+    }
 }
 
-@media only screen and (min-width: 1141px) {
+@media only screen and (min-width: 1024px) {
     .navbar {
+        padding: 12px 60px;
+        
         &__options {
             display: flex;
             flex-direction: row;

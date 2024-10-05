@@ -12,44 +12,69 @@
         position: relative;
         margin-top: 20px;
         margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+
+        &.bmi__form,
+        &.whr__form {
+            gap: 20px;
+            margin-top: 30px;
+
+            .calculate__box {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
     }
 
     &__label {
         justify-content: center;
         display: flex;
-        padding: 7px;
         font-size: 18px;
     }
 
     &__input {
         justify-content: center;
-        margin: 10px;
         padding: 10px;
         border-radius: 30px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-size: 18px;
         text-align: center;
-        width: 60%;
+        width: 50%;
         transition: 0.4s;
         outline: none;
         cursor: pointer;
 
         &:focus {
-            background-color: rgba(238, 198, 70, 0.10);
+            background-color: rgba(238, 198, 70, 0.1);
+        }
+    }
+
+    &__button {
+        padding: 10px 35px;
+        margin-top: 30px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+
+        &:first-of-type {
+            justify-content: center;
         }
     }
 
     &__gender {
-        margin: 5px 20px 20px 20px;
-        background-color: $color-first;
+        margin: 5px 10px 10px 10px;
         opacity: 70%;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        color: #fff;
-        font-size: 25px;
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
         border-radius: 50%;
-        border: none;
         cursor: pointer;
 
         &:hover {
@@ -67,37 +92,48 @@
     }
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 768px) {
     .calculate {
         &__input {
             width: 30%;
         }
+
+        &__box {
+            width: 50%;
+    
+            &:first-of-type {
+                justify-content: center;
+            }
+        }
     }
 }
 
-@media only screen and (min-width: 1141px) {
+@media only screen and (min-width: 1024px) {
     .calculate {
-        &__title {
-            font-size: 34px;
+        &__form {
+            &.bmi__form,
+            &.whr_form {
+                gap: 32px;
+            }
         }
 
-        &__form {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-            margin-top: 20px;
-            margin-bottom: 60px;
+        &__box {
+            width: 35%;
         }
 
         &__label {
-            grid-column: 1;
-            justify-self: end;
-            padding-right: 50px;
             font-size: 20px;
         }
 
         &__input {
-            grid-column: 2;
+            width: 25%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .calculate {
+        &__box {
             width: 25%;
         }
     }

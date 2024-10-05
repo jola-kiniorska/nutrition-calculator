@@ -24,3 +24,21 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main__title {
+    font-size: 28px;
+    margin: 15px auto;
+}
+
+@media only screen and (min-width: 1024px) {
+    .main__title {
+        font-size: 36px;
+        margin: 36px auto;
+    }
+}
+
