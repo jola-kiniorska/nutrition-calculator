@@ -11,11 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Nunito&display=swap" rel="stylesheet">
 
-    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
-
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
 
@@ -33,14 +29,14 @@
                         <div class="dropdown">
                             <button class="navbar__option--menu">Menu</button>
                             <div class="dropdown__content">
-                                <a class="dropdown__content--link" href="../bmi/index.html">BMI</a>
-                                <a class="dropdown__content--link" href="#whr">WHR</a>
+                                <a class="dropdown__content--link" href="#bmi">BMI</a>
+                                <a class="dropdown__content--link" href="../whr/index.html">WHR</a>
                                 <a class="dropdown__content--link" href="../calories/index.html">Calories</a>
                             </div>
                         </div>
                     </li>
-                    <li class="navbar__option"><a href="../bmi/index.html">BMI</a></li>
-                    <li class="navbar__option"><a href="#whr">WHR</a></li>
+                    <li class="navbar__option"><a href="#bmi">BMI</a></li>
+                    <li class="navbar__option"><a href="../whr/index.html">WHR</a></li>
                     <li class="navbar__option"><a href="../calories/index.html">Calories</a></li>
                 </ul>
             </ul>
@@ -48,13 +44,13 @@
     </div>
 
     <div id="calculation" class="wrapper calculate">
-        <h1 class="main__title">WHR calculator</h1>
-        <form class="calculate__form whr__form" action="../whr_result/index.html">
-            <label for="waist" class="calculate__label">Waist circumference (cm):</label>
-            <input type="text" id="waist" placeholder="60" class="calculate__input" required>
-            <label for="hip" class="calculate__label">Hip circumference (cm):</label>
-            <input type="text" id="hip" placeholder="90" class="calculate__input" required>
-            <input type="submit" value="Calculate" id="button__whr" class="button calculate__button">
+        <h1 class="main__title">BMI calculator</h1>
+        <form class="calculate__form bmi__form" action="../bmi_result.html">
+                <label for="weight" class="calculate__label">Body weight (kg):</label>
+                <input type="text" id="weight" placeholder="65" class="calculate__input" required>
+                <label for="height" class="calculate__label">Height (cm):</label>
+                <input type="text" id="height" placeholder="170" class="calculate__input" required>
+                <input type="submit" value="Calculate" id="button__bmi" class="button calculate__button">
         </form>
     </div>
 
