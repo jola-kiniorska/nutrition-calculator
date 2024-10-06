@@ -53,7 +53,7 @@ a {
 }
 .navbar__container {
   margin: 0, auto;
-  background-color: #84936A;
+  background-color: #84936a;
   color: #fff;
 }
 .navbar__element {
@@ -65,13 +65,13 @@ a {
   display: none;
 }
 .navbar__option a:hover {
-  color: #EEC646;
+  color: #eec646;
   transform: scale(1.05);
   will-change: transform;
 }
 .navbar__option--menu {
   display: flex;
-  background-color: #84936A;
+  background-color: #84936a;
   border: none;
   color: #fff;
   font-family: "Nunito", sans-serif;
@@ -79,7 +79,7 @@ a {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .navbar__option--menu:hover {
-  color: #EEC646;
+  color: #eec646;
 }
 .navbar__option--logo {
   font-family: "Amaranth", sans-serif;
@@ -89,7 +89,7 @@ a {
   will-change: transform;
 }
 .navbar__option--logo span {
-  color: #EEC646;
+  color: #eec646;
 }
 .navbar .dropdown {
   display: inline-block;
@@ -101,7 +101,7 @@ a {
   width: 186%;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  background-color: #84936A;
+  background-color: #84936a;
   border-radius: 7px;
   z-index: 1;
 }
@@ -114,7 +114,7 @@ a {
 }
 .navbar .dropdown__content--link:hover {
   color: #fff;
-  background-color: #EEC646;
+  background-color: #eec646;
 }
 .navbar .dropdown:hover .dropdown__content {
   display: block;
@@ -168,7 +168,7 @@ a {
 .button {
   border: 4px solid currentColor;
   border-radius: 30px;
-  color: #84936A;
+  color: #84936a;
   font-size: 22px;
   font-weight: 700;
   overflow: hidden;
@@ -185,7 +185,7 @@ a {
   color: #fff;
   transform: scale(1.05);
   will-change: transform;
-  background-color: #84936A;
+  background-color: #84936a;
 }
 
 .choice__buttons {
@@ -285,7 +285,7 @@ a {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  accent-color: #84936A;
+  accent-color: #84936a;
   cursor: pointer;
 }
 .calculate__gender:hover {
@@ -353,7 +353,7 @@ a {
   margin: 0;
   font-size: 26px;
   font-weight: 600;
-  background-color: #EEC646;
+  background-color: #eec646;
   border-radius: 50%;
   padding: 10px 15px;
   border: 5px #fff solid;
