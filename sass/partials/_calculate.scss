@@ -17,16 +17,34 @@
         align-items: center;
         gap: 12px;
 
-        &.bmi__form,
-        &.whr__form {
-            gap: 20px;
-            margin-top: 30px;
-
+        &.calories__form {
             .calculate__box {
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
+                gap: 15px;
+
+                &--item {
+                    flex-direction: row;
+
+                    &:first-of-type {
+                        justify-content: center;
+                    }
+                }
             }
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        &--item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            width: 90%;
         }
     }
 
@@ -54,19 +72,7 @@
     }
 
     &__button {
-        padding: 10px 35px;
         margin-top: 30px;
-    }
-
-    &__box {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
-
-        &:first-of-type {
-            justify-content: center;
-        }
     }
 
     &__gender {
@@ -75,6 +81,7 @@
         width: 35px;
         height: 35px;
         border-radius: 50%;
+        accent-color: $color-first;
         cursor: pointer;
 
         &:hover {
@@ -95,7 +102,7 @@
 @media only screen and (min-width: 768px) {
     .calculate {
         &__input {
-            width: 30%;
+            width: 45%;
         }
 
         &__box {
@@ -112,29 +119,58 @@
     .calculate {
         &__form {
             &.bmi__form,
-            &.whr_form {
-                gap: 32px;
+            &.whr__form {
+                margin-top: 50px;
+            }
+
+            &.calories__form {
+                .calculate__box {
+                    gap: 10px;
+                }
+            }
+        }
+    
+        &__box {
+            &--item {
+                gap: 35px;
+                width: 80%;
+                flex-direction: row;
             }
         }
 
-        &__box {
-            width: 35%;
+        &__input {
+            width: 40%;
         }
 
         &__label {
-            font-size: 20px;
-        }
-
-        &__input {
-            width: 25%;
+            text-align: left;
         }
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
     .calculate {
         &__box {
-            width: 25%;
+            &--item {
+                width: 60%;
+            }
+        }
+
+        &__form {
+            &.bmi__form,
+            &.whr__form {
+                margin-top: 70px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .calculate {
+        &__box {
+            &--item {
+                width: 50%;
+            }
         }
     }
 }

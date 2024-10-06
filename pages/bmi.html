@@ -29,13 +29,13 @@
                         <div class="dropdown">
                             <button class="navbar__option--menu">Menu</button>
                             <div class="dropdown__content">
-                                <a class="dropdown__content--link" href="#bmi">BMI</a>
+                                <a class="dropdown__content--link" href="./bmi.html">BMI</a>
                                 <a class="dropdown__content--link" href="./whr.html">WHR</a>
                                 <a class="dropdown__content--link" href="./calories.html">Calories</a>
                             </div>
                         </div>
                     </li>
-                    <li class="navbar__option"><a href="#bmi">BMI</a></li>
+                    <li class="navbar__option"><a href="./bmi.html">BMI</a></li>
                     <li class="navbar__option"><a href="./whr.html">WHR</a></li>
                     <li class="navbar__option"><a href="./calories.html">Calories</a></li>
                 </ul>
@@ -47,12 +47,14 @@
         <h1 class="main__title">BMI calculator</h1>
         <form class="calculate__form bmi__form" action="./bmi_result.html">
             <div class="calculate__box">
-                <label for="weight" class="calculate__label">Body weight (kg):</label>
-                <input type="text" id="weight" placeholder="65" class="calculate__input" required>
-            </div>
-            <div class="calculate__box">
-                <label for="height" class="calculate__label">Height (cm):</label>
-                <input type="text" id="height" placeholder="170" class="calculate__input" required>
+                <div class="calculate__box--item">
+                    <label for="weight" class="calculate__label">Body weight (kg):</label>
+                    <input type="text" id="weight" placeholder="65" class="calculate__input" required>
+                </div>
+                <div class="calculate__box--item">
+                    <label for="height" class="calculate__label">Height (cm):</label>
+                    <input type="text" id="height" placeholder="170" class="calculate__input" required>
+                </div>
             </div>
             <input type="submit" value="Calculate" id="button__bmi" class="button calculate__button">
         </form>
