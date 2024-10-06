@@ -3,7 +3,7 @@
     border-radius: 30px;
     color: $color-first;
     font-size: 22px;
-    font-weight: $font-bold;
+    font-weight: $font-strong-bold;
     overflow: hidden;
     padding: 10px 35px;
     position: relative;
@@ -15,7 +15,7 @@
 
     &:hover {
         border: 2px solid transparent;
-        color: #fff;
+        color: $colot-white;
         transform: scale(1.05);
         will-change: transform;
         background-color: $color-first;

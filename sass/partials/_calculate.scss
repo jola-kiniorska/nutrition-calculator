@@ -5,7 +5,7 @@
 
     &__title {
         font-size: 28px;
-        font-weight: $font-bold;
+        font-weight: $font-strong-bold;
     }
 
     &__form {
@@ -90,7 +90,7 @@
 
         &:focus {
             opacity: 100%;
-            border: 2px solid #fff;
+            border: 2px solid $colot-white;
         }
 
         &--female {

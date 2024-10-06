@@ -8,11 +8,11 @@
     &__value {
         margin: 0;
         font-size: 26px;
-        font-weight: 600;
+        font-weight: $font-bold;
         background-color: $color-second;
         border-radius: 50%;
         padding: 10px 15px;
-        border: 5px #fff solid;
+        border: 5px $colot-white solid;
     }
 
     &__meaning {
