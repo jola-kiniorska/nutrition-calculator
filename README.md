@@ -30,7 +30,7 @@ Project is created with:
 
 ## Website url
 
-https://lemon-bay-00e72a103.5.azurestaticapps.net
+[Nutrition Calculator](https://lemon-bay-00e72a103.5.azurestaticapps.net)
 
 ## Website screenshot
 
